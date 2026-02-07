@@ -62,14 +62,25 @@ require("amaranth").setup({
 })
 ```
 
+## Lualine
+
+Amaranth includes a [lualine](https://github.com/nvim-lualine/lualine.nvim) theme:
+
+```lua
+require("lualine").setup({
+  options = { theme = "amaranth" },
+})
+```
+
 ## Supported Plugins
 
 - Treesitter
-- LSP semantic tokens
+- LSP (semantic tokens, diagnostics, references)
 - Neo-tree
 - Gitsigns
 - Which-key
 - Flash.nvim
+- Lualine
 
 ## License
 
