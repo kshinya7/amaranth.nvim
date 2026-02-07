@@ -25,40 +25,7 @@ local c = {
 }
 
 local colorscheme = {
-  -- Editor
   editorBackground = config.transparent and 'none' or c.bg,
-  sidebarBackground = c.bg,
-  popupBackground = c.bg_light,
-  floatingWindowBackground = c.bg_light,
-  menuOptionBackground = c.bg_lighter,
-
-  -- Text
-  mainText = c.fg,
-  emphasisText = '#ffffff',
-  inactiveText = c.gray,
-  lineNumberText = c.gray,
-  commentText = c.gray,
-
-  -- Borders
-  windowBorder = c.bg_lighter,
-
-  -- Syntax
-  syntaxFunction = c.pink,
-  syntaxKeyword = c.magenta,
-  syntaxOperator = c.pink_light,
-  syntaxError = c.red,
-  stringText = c.green,
-  constantText = c.orange,
-  typeText = c.cyan,
-
-  -- Feedback
-  successText = c.green,
-  warningText = c.yellow,
-  errorText = c.red,
-  linkText = c.blue,
-  warningEmphasis = c.yellow,
-
-  -- Raw colors for direct access
   colors = c,
 }
 

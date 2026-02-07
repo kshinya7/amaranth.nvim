@@ -121,15 +121,36 @@ local function set_groups()
     Error = { fg = c.red },
     Todo = { fg = c.bg, bg = c.yellow, bold = true },
 
+    -- Messages
+    MsgArea = { fg = c.fg },
+    MoreMsg = { fg = c.cyan },
+    Question = { fg = c.cyan },
+    WarningMsg = { fg = c.yellow },
+    ErrorMsg = { fg = c.red },
+
+    -- WinBar
+    WinBar = { fg = c.fg, bold = true },
+    WinBarNC = { fg = c.gray },
+
     -- Diagnostics
     DiagnosticError = { fg = c.red },
     DiagnosticWarn = { fg = c.yellow },
     DiagnosticInfo = { fg = c.blue },
     DiagnosticHint = { fg = c.cyan },
+    DiagnosticVirtualTextError = { fg = c.red },
+    DiagnosticVirtualTextWarn = { fg = c.yellow },
+    DiagnosticVirtualTextInfo = { fg = c.blue },
+    DiagnosticVirtualTextHint = { fg = c.cyan },
     DiagnosticUnderlineError = { undercurl = true, sp = c.red },
     DiagnosticUnderlineWarn = { undercurl = true, sp = c.yellow },
     DiagnosticUnderlineInfo = { undercurl = true, sp = c.blue },
     DiagnosticUnderlineHint = { undercurl = true, sp = c.cyan },
+
+    -- LSP
+    LspReferenceText = { bg = c.bg_lighter },
+    LspReferenceRead = { bg = c.bg_lighter },
+    LspReferenceWrite = { bg = c.bg_lighter },
+    LspSignatureActiveParameter = { fg = c.orange, bold = true },
 
     -- Treesitter
     ['@variable'] = { fg = c.fg },
@@ -271,8 +292,6 @@ function theme.colorscheme()
   set_terminal_colors()
   set_groups()
 
-  -- Enable treesitter highlighting (if parser available)
-  pcall(vim.treesitter.start)
 end
 
 return theme
