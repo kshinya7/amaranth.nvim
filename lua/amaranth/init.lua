@@ -36,8 +36,8 @@ local function set_groups()
   local groups = {
     -- Editor
     Normal = { fg = c.fg, bg = bg },
-    NormalFloat = { fg = c.fg, bg = c.bg_light },
-    FloatBorder = { fg = c.orange, bg = c.bg_light },
+    NormalFloat = { fg = c.fg, bg = c.bg_float },
+    FloatBorder = { fg = c.gray, bg = c.bg },
     Cursor = { fg = c.bg, bg = c.fg },
     CursorLine = { bg = utils.shade(c.bg_lighter, 0.3, c.bg) },
     CursorLineNr = { fg = c.pink, bold = true },
@@ -45,7 +45,7 @@ local function set_groups()
     Visual = { bg = c.bg_light },
     Search = { fg = c.bg, bg = c.yellow },
     IncSearch = { fg = c.bg, bg = c.orange },
-    Pmenu = { fg = c.fg, bg = c.bg_light },
+    Pmenu = { fg = c.fg, bg = c.bg_float },
     PmenuSel = { fg = c.bg, bg = c.orange },
     PmenuSbar = { bg = c.bg_lighter },
     PmenuThumb = { bg = c.gray },
@@ -70,7 +70,7 @@ local function set_groups()
 
     -- Tabline
     TabLine = { fg = c.gray, bg = c.bg_accent },
-    TabLineSel = { fg = c.fg, bg = c.bg_light, bold = true },
+    TabLineSel = { fg = c.fg, bg = c.bg_accent, bold = true },
     TabLineFill = { bg = c.bg_accent },
 
     -- Spell

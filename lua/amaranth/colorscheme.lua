@@ -3,6 +3,7 @@ local config = require 'amaranth.config'
 local c = {
   -- Base colors
   bg = '#1f212b',
+  bg_float = '#242738',
   bg_light = '#2a2f45',
   bg_lighter = '#323850',
   bg_accent = '#1a1c25',
