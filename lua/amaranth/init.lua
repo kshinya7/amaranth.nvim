@@ -284,10 +284,10 @@ function theme.colorscheme()
   end
 
   vim.o.termguicolors = true
-  vim.g.colors_name = 'amaranth'
 
   -- Clear highlights without disrupting treesitter
   vim.cmd('highlight clear')
+  vim.g.colors_name = 'amaranth'
 
   set_terminal_colors()
   set_groups()
