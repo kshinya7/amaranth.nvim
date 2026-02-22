@@ -28,8 +28,10 @@ end
 
 local function set_groups()
   local bg = config.transparent and "NONE" or colorscheme.editorBackground
-  local diff_add = utils.shade(c.green, 0.25, c.bg)
-  local diff_delete = utils.shade(c.red, 0.25, c.bg)
+  local diff_add = '#363d32'
+  local diff_add_text = '#3c503e'
+  local diff_delete = '#452225'
+  local diff_delete_text = '#54272b'
   local diff_change = utils.shade(c.blue, 0.25, c.bg)
   local diff_text = utils.shade(c.yellow, 0.35, c.bg)
 
@@ -81,8 +83,10 @@ local function set_groups()
 
     -- Diff
     DiffAdd = { bg = diff_add },
+    DiffAddText = { bg = diff_add_text },
     DiffChange = { bg = diff_change },
-    DiffDelete = { bg = diff_delete },
+    DiffDelete = { bg = diff_delete, fg = c.gray },
+    DiffDeleteText = { bg = diff_delete_text },
     DiffText = { bg = diff_text },
 
     -- Syntax
