@@ -2,11 +2,11 @@ local config = require 'amaranth.config'
 
 local c = {
   -- Base colors
-  bg = '#1f212b',
-  bg_float = '#242738',
-  bg_light = '#2a2f45',
-  bg_lighter = '#323850',
-  bg_accent = '#1a1c25',
+  bg = '#1d2027',
+  bg_float = '#222634',
+  bg_light = '#282e41',
+  bg_lighter = '#30374c',
+  bg_accent = '#181b21',
   fg = '#e0d8db',
   fg_dim = '#9a9eb0',
 
