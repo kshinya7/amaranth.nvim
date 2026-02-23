@@ -29,7 +29,7 @@ end
 local function set_groups()
   local bg = config.transparent and "NONE" or colorscheme.editorBackground
   local diff_add = '#363d32'
-  local diff_add_text = '#3c503e'
+  local diff_add_text = '#3c4d3b'
   local diff_delete = '#452225'
   local diff_delete_text = '#54272b'
   local diff_change = utils.shade(c.blue, 0.25, c.bg)
@@ -88,6 +88,14 @@ local function set_groups()
     DiffDelete = { bg = diff_delete, fg = c.gray },
     DiffDeleteText = { bg = diff_delete_text },
     DiffText = { bg = diff_text },
+
+    -- Trouble
+    TroubleNormal = { fg = c.fg, bg = c.bg_accent },
+    TroubleFzfFileBasename = { fg = c.fg },
+    TroubleFzfFileDirname = { fg = c.gray },
+    TroubleFzfLnum = { fg = c.gray },
+    TroubleFzfFullLine = { fg = c.gray },
+    TroubleFzfMatch = { fg = utils.shade(c.yellow, 0.9, c.bg) },
 
     -- Syntax
     Comment = { fg = c.gray, italic = config.italics.comments },
